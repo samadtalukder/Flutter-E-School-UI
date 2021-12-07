@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_e_school_ui/app/app_color.dart';
 import 'package:flutter_e_school_ui/utils/image_util.dart';
 
-class GradientBG extends StatelessWidget {
-  const GradientBG({Key? key}) : super(key: key);
+class SplashBody extends StatelessWidget {
+  const SplashBody({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
