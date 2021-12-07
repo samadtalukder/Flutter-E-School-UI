@@ -15,18 +15,18 @@ class OnBoardSlider {
 
 final onBoardSlideList = [
   OnBoardSlider(
-    sliderHeading: Constants.slide_title_1,
-    sliderSubHeading: Constants.slide_content_1,
+    sliderHeading: Constants.slideTitle_1,
+    sliderSubHeading: Constants.slideContent_1,
     sliderImageUrl: ImageUtil.slide1,
   ),
   OnBoardSlider(
-    sliderHeading: Constants.slide_title_2,
-    sliderSubHeading: Constants.slide_title_content_2,
+    sliderHeading: Constants.slideTitle_2,
+    sliderSubHeading: Constants.slideContent_2,
     sliderImageUrl: ImageUtil.slide2,
   ),
   OnBoardSlider(
-    sliderHeading: Constants.slide_title_3,
-    sliderSubHeading: Constants.slide_content_3,
+    sliderHeading: Constants.slideTitle_3,
+    sliderSubHeading: Constants.slideContent_3,
     sliderImageUrl: ImageUtil.slide3,
   ),
 ];
