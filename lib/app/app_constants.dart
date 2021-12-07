@@ -6,7 +6,7 @@ class Constants {
       "You can manage your whole school \n by this app";
 
   static const slide_title_2 = "Attendance Management";
-  static const slide_title_content =
+  static const slide_title_content_2 =
       "You can manage your whole school \n by this app";
 
   static const slide_title_3 = "Result & Exam Management";
