@@ -7,7 +7,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
 class AcademicManagementScreen extends StatefulWidget {
-  const AcademicManagementScreen({Key? key}) : super(key: key);
+  //const AcademicManagementScreen({Key? key}) : super(key: key);
 
   @override
   _AcademicManagementScreenState createState() =>
@@ -15,8 +15,7 @@ class AcademicManagementScreen extends StatefulWidget {
 }
 
 class _AcademicManagementScreenState extends State<AcademicManagementScreen> {
-  var getArguments = Get.arguments;
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -107,8 +106,7 @@ class _AcademicManagementScreenState extends State<AcademicManagementScreen> {
               ],
             ),
           ),
-          (getArguments != null)
-              ? Padding(
+          Padding(
                   padding: EdgeInsets.only(
                     top: ScreenUtil().setHeight(260),
                     left: ScreenUtil().setWidth(30),
@@ -121,13 +119,13 @@ class _AcademicManagementScreenState extends State<AcademicManagementScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           TextUtil(
-                            text: "getArguments[1].toUpperCase()",
+                            text: Constants.schoolName,
                             fontSize: 14,
                             color: AppColor.text_color_1,
                             fontWeight: FontWeight.normal,
                           ),
                           TextUtil(
-                            text: getArguments[0],
+                            text: Constants.academicManagement,
                             fontSize: 18,
                             color: AppColor.white,
                             fontWeight: FontWeight.bold,
@@ -136,8 +134,7 @@ class _AcademicManagementScreenState extends State<AcademicManagementScreen> {
                       ),
                     ],
                   ),
-                )
-              : const Text(""),
+                ),
           Padding(
             padding: EdgeInsets.only(
               top: ScreenUtil().setHeight(420),
