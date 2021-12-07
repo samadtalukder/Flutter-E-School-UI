@@ -20,11 +20,22 @@ class Constants {
   static const welcome = "Welcome!";
   static const management = "Management";
 
-  static const schoolName = "Dhaka College";
+  static const schoolName = "Flutter School & College";
 
+  static const academic = "Academic";
+  static const admission = "Admission";
+  static const human = "Human";
+  static const resources = "Resources";
+  static const accounts = "Accounts";
+  static const student = "Student";
+  static const routineExam= "Routine & Exam";
+  static const result = "Result";
+  static const attendance = "Attendance";
+  static const leave = "Leave";
+  
   static const academicManagement = "Academic Management";
   static const admissionManagement = "Admission Management";
-  static const humanResources = "Human Resources";
+  static const humanResourcesManagement = "Human Resources";
   static const accountsManagement = "Accounts Management";
   static const studentManagement = "Student Management";
   static const routineExamManagement = "Routine & Exam Management";
