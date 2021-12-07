@@ -1,14 +1,11 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_e_school_ui/app/app_constants.dart';
-import 'package:flutter_e_school_ui/app/app_preference.dart';
 import 'package:flutter_e_school_ui/route/page_routes.dart';
 import 'package:flutter_e_school_ui/widgets/gradient_bg.dart';
 import 'package:get/get.dart';
 
 class SplashScreen extends StatefulWidget {
-
   const SplashScreen({Key? key}) : super(key: key);
 
   @override
@@ -22,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
 
-    loadWidget();
+    loadSplashScreen();
   }
 
   @override
@@ -31,32 +28,18 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Stack(
         fit: StackFit.expand,
         children: const [
-          GradientBG(),
+          SplashBody(),
         ],
       ),
     );
   }
 
-  loadWidget() async {
+  loadSplashScreen() async {
     var duration = Duration(seconds: splashDelay);
-    return Timer(duration, checkOnBoardScreen);
+    return Timer(duration, checkOnScreen);
   }
 
-  Future checkOnBoardScreen() async {
-    bool isFirstTimeOpen =
-        AppPreference.getBooleanData(Constants.introScreenKey) ?? false;
-    //Navigator.pop(context);
-    if (isFirstTimeOpen) {
-      if (AppPreference.getData(Constants.schoolNameKey) != "") {
-        Get.toNamed(Routes.home);
-      } else {
-        Get.toNamed(Routes.selectSchool);
-      }
-    } else {
-      await AppPreference.setBooleanData(Constants.introScreenKey, true);
-      Get.offNamed(Routes.onBoarding);
-    }
+  Future checkOnScreen() async {
+    Get.offNamed(Routes.onBoarding);
   }
 }
-
-
