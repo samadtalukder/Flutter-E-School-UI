@@ -1,6 +1,6 @@
 import 'package:flutter_e_school_ui/page/academic_management_screen.dart';
 import 'package:flutter_e_school_ui/page/home_screen.dart';
-import 'package:flutter_e_school_ui/page/on_boarding_screen.dart';
+import 'package:flutter_e_school_ui/page/on_board/on_boarding_screen.dart';
 import 'package:flutter_e_school_ui/page/splash_screen.dart';
 import 'package:get/get.dart';
 
@@ -22,7 +22,7 @@ class AppPages {
     ),
     GetPage(
       name: Routes.academicManagement,
-      page: () => const AcademicManagementScreen(),
+      page: () =>  AcademicManagementScreen(),
     ),
   ];
 }
