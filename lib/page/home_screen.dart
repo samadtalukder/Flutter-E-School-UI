@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_e_school_ui/app/app_color.dart';
 import 'package:flutter_e_school_ui/app/app_constants.dart';
-import 'package:flutter_e_school_ui/app/app_preference.dart';
 import 'package:flutter_e_school_ui/page/academic_management_screen.dart';
 import 'package:flutter_e_school_ui/utils/image_util.dart';
 import 'package:flutter_e_school_ui/utils/text_util.dart';
@@ -79,7 +78,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               Container(
                 padding: EdgeInsets.only(
-                  top: ScreenUtil().setHeight(130),
+                  top: ScreenUtil().setHeight(50),
                   left: ScreenUtil().setWidth(30),
                 ),
                 margin: EdgeInsets.only(
@@ -100,7 +99,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           fontWeight: FontWeight.normal,
                         ),
                         TextUtil(
-                          text: AppPreference.getData(Constants.schoolNameKey),
+                          text: Constants.schoolName,
                           fontSize: 20,
                           maxLine: 1,
                           alignment: TextAlign.start,
@@ -151,16 +150,9 @@ class _HomeScreenState extends State<HomeScreen> {
                           case 0:
                             {
                               Get.to(
-                                const AcademicManagementScreen(),
-                                arguments: [
-                                  Constants.academic_management,
-                                  AppPreference.getData(Constants.schoolNameKey),
-                                ],
+                                 AcademicManagementScreen(),
+                                arguments: Constants.academicManagement,
                               );
-                              /*Get.toNamed(
-                                Routes.academicManagement,
-                                arguments: Constants.academic_management,
-                              );*/
                             }
                             break;
                           case 1:
@@ -220,47 +212,47 @@ class _HomeScreenState extends State<HomeScreen> {
 List<Widget> _listTile = <Widget>[
   HomeItemFullGridTile(
     image: ImageUtil.academic_mangement,
-    titleText: "Academic",
+    titleText: Constants.academic,
     subTitleText: Constants.management,
   ),
   HomeItemGridTile(
     image: ImageUtil.admission_mangemnt,
-    titleText: "Admission",
+    titleText: Constants.admission,
     subTitleText: Constants.management,
   ),
   HomeItemGridTile(
     image: ImageUtil.human_resources,
-    titleText: "Human",
-    subTitleText: "Resources",
+    titleText: Constants.human,
+    subTitleText: Constants.resources,
   ),
   HomeItemGridTile(
     image: ImageUtil.student_mangement,
-    titleText: "Student",
+    titleText: Constants.student,
     subTitleText: Constants.management,
   ),
   HomeItemGridTile(
     image: ImageUtil.account_mangement,
-    titleText: "Accounts",
+    titleText: Constants.accounts,
     subTitleText: Constants.management,
   ),
   HomeItemFullGridTile(
     image: ImageUtil.routine_exam,
-    titleText: "Routine & Exam",
+    titleText: Constants.routineExam,
     subTitleText: Constants.management,
   ),
   HomeItemGridTile(
     image: ImageUtil.result_management,
-    titleText: "Result",
+    titleText: Constants.result,
     subTitleText: Constants.management,
   ),
   HomeItemGridTile(
     image: ImageUtil.attendence_management,
-    titleText: "Attendance",
+    titleText: Constants.attendance,
     subTitleText: Constants.management,
   ),
   HomeItemGridTile(
     image: ImageUtil.leave_management,
-    titleText: "Leave",
+    titleText: Constants.leave,
     subTitleText: Constants.management,
   ),
 ];
