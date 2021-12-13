@@ -34,7 +34,7 @@ class SplashBody extends StatelessWidget {
           bottom: -150.0,
           left: -50.0,
           child: Image.asset(
-            ImageUtil.bottom_shape,
+            ImageUtil.bottomShape,
             height: 250.0,
             width: 250.0,
           ),
@@ -43,7 +43,7 @@ class SplashBody extends StatelessWidget {
           top: -80.0,
           right: -30.0,
           child: Image.asset(
-            ImageUtil.upper_shape,
+            ImageUtil.upperShape,
             height: 200.0,
             width: 150.0,
           ),
@@ -52,7 +52,7 @@ class SplashBody extends StatelessWidget {
           top: 80.0,
           right: 250.0,
           child: Image.asset(
-            ImageUtil.left_top_shape,
+            ImageUtil.leftTopShape,
             height: 200.0,
             width: 250.0,
           ),
@@ -61,7 +61,7 @@ class SplashBody extends StatelessWidget {
           bottom: 120.0,
           left: 250.0,
           child: Image.asset(
-            ImageUtil.right_bottom_shape,
+            ImageUtil.rightBottomShape,
             height: 200.0,
             width: 250.0,
           ),
