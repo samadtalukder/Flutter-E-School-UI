@@ -37,7 +37,7 @@ class _AcademicManagementScreenState extends State<AcademicManagementScreen> {
             top: ScreenUtil().setHeight(80),
             right: ScreenUtil().setWidth(-20),
             child: Image.asset(
-              ImageUtil.upper_shape,
+              ImageUtil.upperShape,
               height: ScreenUtil().setHeight(220),
               width: ScreenUtil().setWidth(160),
             ),
@@ -46,7 +46,7 @@ class _AcademicManagementScreenState extends State<AcademicManagementScreen> {
             top: ScreenUtil().setHeight(150),
             right: ScreenUtil().setWidth(300),
             child: Image.asset(
-              ImageUtil.fx,
+              ImageUtil.icFx,
               height: ScreenUtil().setHeight(60),
               width: ScreenUtil().setWidth(60),
             ),
@@ -55,7 +55,7 @@ class _AcademicManagementScreenState extends State<AcademicManagementScreen> {
             top: ScreenUtil().setHeight(230),
             right: ScreenUtil().setWidth(180),
             child: Image.asset(
-              ImageUtil.group_panel,
+              ImageUtil.icGroupPanel,
               height: ScreenUtil().setHeight(60),
               width: ScreenUtil().setWidth(60),
             ),
@@ -64,7 +64,7 @@ class _AcademicManagementScreenState extends State<AcademicManagementScreen> {
             top: ScreenUtil().setHeight(240),
             right: ScreenUtil().setWidth(50),
             child: Image.asset(
-              ImageUtil.groupEquation,
+              ImageUtil.icGroupEquation,
               height: ScreenUtil().setHeight(105),
               width: ScreenUtil().setWidth(105),
             ),
@@ -73,7 +73,7 @@ class _AcademicManagementScreenState extends State<AcademicManagementScreen> {
             top: ScreenUtil().setHeight(60),
             left: ScreenUtil().setWidth(-90),
             child: Image.asset(
-              ImageUtil.left_top_shape,
+              ImageUtil.leftTopShape,
               height: ScreenUtil().setHeight(220),
               width: ScreenUtil().setWidth(160),
             ),
@@ -89,13 +89,13 @@ class _AcademicManagementScreenState extends State<AcademicManagementScreen> {
                   children: [
                     const Icon(
                       Icons.arrow_back_ios,
-                      color: AppColor.white,
+                      color: AppColor.colorWhite,
                       size: 18.0,
                     ),
                     TextUtil(
                       text: Constants.back,
                       fontSize: 16,
-                      color: AppColor.white,
+                      color: AppColor.colorWhite,
                       fontWeight: FontWeight.w600,
                     ),
                   ],
@@ -121,13 +121,13 @@ class _AcademicManagementScreenState extends State<AcademicManagementScreen> {
                           TextUtil(
                             text: Constants.schoolName,
                             fontSize: 14,
-                            color: AppColor.text_color_1,
+                            color: AppColor.colorTextYellow,
                             fontWeight: FontWeight.normal,
                           ),
                           TextUtil(
                             text: Constants.academicManagement,
                             fontSize: 18,
-                            color: AppColor.white,
+                            color: AppColor.colorWhite,
                             fontWeight: FontWeight.bold,
                           ),
                         ],
@@ -144,7 +144,7 @@ class _AcademicManagementScreenState extends State<AcademicManagementScreen> {
               width: ScreenUtil().screenWidth,
               decoration: BoxDecoration(
                 shape: BoxShape.rectangle,
-                color: AppColor.white,
+                color: AppColor.colorWhite,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(
                     ScreenUtil().setWidth(30),
