@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_e_school_ui/app/app_color.dart';
 import 'package:flutter_e_school_ui/app/app_constants.dart';
-import 'package:flutter_e_school_ui/page/academic_management_screen.dart';
+import 'package:flutter_e_school_ui/page/academic_management/academic_management_screen.dart';
+
 import 'package:flutter_e_school_ui/utils/image_util.dart';
 import 'package:flutter_e_school_ui/utils/text_util.dart';
 import 'package:flutter_e_school_ui/widgets/home_item_full_grid_tile.dart';
@@ -9,6 +10,7 @@ import 'package:flutter_e_school_ui/widgets/home_item_grid_tile.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:get/get.dart';
+
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -41,7 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 top: ScreenUtil().setHeight(-80),
                 right: ScreenUtil().setWidth(-20),
                 child: Image.asset(
-                  ImageUtil.upper_shape,
+                  ImageUtil.upperShape,
                   height: ScreenUtil().setHeight(220),
                   width: ScreenUtil().setWidth(160),
                 ),
@@ -50,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 top: ScreenUtil().setHeight(60),
                 left: ScreenUtil().setWidth(-90),
                 child: Image.asset(
-                  ImageUtil.left_top_shape,
+                  ImageUtil.leftTopShape,
                   height: ScreenUtil().setHeight(220),
                   width: ScreenUtil().setWidth(160),
                 ),
@@ -63,7 +65,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       Image.asset(
-                        ImageUtil.flower_tob,
+                        ImageUtil.flowerTob,
                         height: ScreenUtil().setHeight(150),
                         width: ScreenUtil().setWidth(100),
                       ),
@@ -95,7 +97,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         TextUtil(
                           text: Constants.welcome,
                           fontSize: 18,
-                          color: AppColor.text_color_1,
+                          color: AppColor.colorTextYellow,
                           fontWeight: FontWeight.normal,
                         ),
                         TextUtil(
@@ -103,7 +105,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           fontSize: 20,
                           maxLine: 1,
                           alignment: TextAlign.start,
-                          color: AppColor.white,
+                          color: AppColor.colorWhite,
                           fontWeight: FontWeight.bold,
                         ),
                       ],
@@ -120,7 +122,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
                     shape: BoxShape.rectangle,
-                    color: AppColor.white,
+                    color: AppColor.colorWhite,
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(ScreenUtil().setHeight(30)),
                       topRight: Radius.circular(ScreenUtil().setHeight(30)),
@@ -211,47 +213,47 @@ class _HomeScreenState extends State<HomeScreen> {
 //List of Cards with color and icon
 List<Widget> _listTile = <Widget>[
   HomeItemFullGridTile(
-    image: ImageUtil.academic_mangement,
+    image: ImageUtil.academicManagement,
     titleText: Constants.academic,
     subTitleText: Constants.management,
   ),
   HomeItemGridTile(
-    image: ImageUtil.admission_mangemnt,
+    image: ImageUtil.admissionManagement,
     titleText: Constants.admission,
     subTitleText: Constants.management,
   ),
   HomeItemGridTile(
-    image: ImageUtil.human_resources,
+    image: ImageUtil.humanResources,
     titleText: Constants.human,
     subTitleText: Constants.resources,
   ),
   HomeItemGridTile(
-    image: ImageUtil.student_mangement,
+    image: ImageUtil.studentManagement,
     titleText: Constants.student,
     subTitleText: Constants.management,
   ),
   HomeItemGridTile(
-    image: ImageUtil.account_mangement,
+    image: ImageUtil.accountManagement,
     titleText: Constants.accounts,
     subTitleText: Constants.management,
   ),
   HomeItemFullGridTile(
-    image: ImageUtil.routine_exam,
+    image: ImageUtil.routineExam,
     titleText: Constants.routineExam,
     subTitleText: Constants.management,
   ),
   HomeItemGridTile(
-    image: ImageUtil.result_management,
+    image: ImageUtil.resultManagement,
     titleText: Constants.result,
     subTitleText: Constants.management,
   ),
   HomeItemGridTile(
-    image: ImageUtil.attendence_management,
+    image: ImageUtil.attendanceManagement,
     titleText: Constants.attendance,
     subTitleText: Constants.management,
   ),
   HomeItemGridTile(
-    image: ImageUtil.leave_management,
+    image: ImageUtil.leaveManagement,
     titleText: Constants.leave,
     subTitleText: Constants.management,
   ),

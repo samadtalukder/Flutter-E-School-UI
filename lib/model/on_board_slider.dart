@@ -17,16 +17,16 @@ final onBoardSlideList = [
   OnBoardSlider(
     sliderHeading: Constants.slideTitle_1,
     sliderSubHeading: Constants.slideContent_1,
-    sliderImageUrl: ImageUtil.slide1,
+    sliderImageUrl: ImageUtil.onBoardSlideImage_1,
   ),
   OnBoardSlider(
     sliderHeading: Constants.slideTitle_2,
     sliderSubHeading: Constants.slideContent_2,
-    sliderImageUrl: ImageUtil.slide2,
+    sliderImageUrl: ImageUtil.onBoardSlideImage_2,
   ),
   OnBoardSlider(
     sliderHeading: Constants.slideTitle_3,
     sliderSubHeading: Constants.slideContent_3,
-    sliderImageUrl: ImageUtil.slide3,
+    sliderImageUrl: ImageUtil.onBoardSlideImage_3,
   ),
 ];

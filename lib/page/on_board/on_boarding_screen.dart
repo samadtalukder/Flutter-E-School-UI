@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_e_school_ui/app/app_color.dart';
 import 'package:flutter_e_school_ui/app/app_constants.dart';
 import 'package:flutter_e_school_ui/model/on_board_slider.dart';
-import 'package:flutter_e_school_ui/page/home_screen.dart';
+import 'package:flutter_e_school_ui/page/home/home_screen.dart';
 import 'package:flutter_e_school_ui/utils/image_util.dart';
 import 'package:flutter_e_school_ui/utils/text_util.dart';
 import 'package:flutter_e_school_ui/widgets/on_board_slider_item.dart';
@@ -164,7 +164,7 @@ class _IntroPage extends State<OnBoardingScreen> {
             top: -50.0,
             right: -30.0,
             child: Image.asset(
-              ImageUtil.slide_top_shape,
+              ImageUtil.slideTopShape,
               height: 200.0,
               width: 150.0,
             ),
@@ -173,7 +173,7 @@ class _IntroPage extends State<OnBoardingScreen> {
             top: 80.0,
             right: 300.0,
             child: Image.asset(
-              ImageUtil.slide_left_shape,
+              ImageUtil.slideLeftShape,
               height: 200.0,
               width: 250.0,
             ),
@@ -182,7 +182,7 @@ class _IntroPage extends State<OnBoardingScreen> {
             bottom: 120.0,
             left: 300.0,
             child: Image.asset(
-              ImageUtil.slide_right_shape,
+              ImageUtil.slideRightShape,
               height: 200.0,
               width: 250.0,
             ),
