@@ -17,7 +17,7 @@ class SnackBarUtil {
         left: 12,
         right: 12,
       ),
-      colorText: AppColor.white,
+      colorText: AppColor.colorWhite,
     );
   }
 }
