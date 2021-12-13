@@ -43,39 +43,4 @@ class Constants {
   static const attendanceManagement = "Attendance Management";
   static const leaveManagement = "Leave Management";
 
-  static const status = "Status";
-  static const phase = "Phase";
-  static const view = "View Details";
-  static const code = "Code";
-  static const subjectCode = "Subject Code";
-  static const name = "Name";
-  static const label = "Label";
-  static const level = "Level";
-  static const semesterName = "Semester Name";
-  static const groupName = "Group Name";
-
-  static const departments_name = "Department Name";
-  static const class_list = "Class List";
-
-  static const inActive = "InActive";
-  static const active = "Active";
-
-  static const boards = "Boards";
-  static const about_institute = "About Institute";
-  static const session = "Session";
-  static const shifts = "Shift";
-  static const section = "Section";
-  static const semesters = "Semesters";
-  static const departments = "Departments";
-  static const groups = "Groups";
-  static const class_category = "Class Category";
-  static const classes = "Classes";
-  static const subjects = "Subjects";
-  static const exam_types = "Exam Types";
-  static const program_offer = "Program Offer";
-
-
-
-
-
 }
